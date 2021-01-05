@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clavier virtuel</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/keyboard.css">
 </head>
 <body>
     <header>
@@ -23,8 +24,8 @@
                 <kbd class="keyboard-key">8</kbd>
                 <kbd class="keyboard-key">9</kbd>
                 <kbd class="keyboard-key">0</kbd>
-                <kbd class="keyboard-key large-key"><i class="fas fa-backspace"></i></kbd>
-            </div>
+                <kbd class="keyboard-key large-key"><i class="fas fa-backspace"><span class="sr-only">Backspace</span></i></kbd>
+            </div> <!-- Fin de la div keybord-row -->
             <div class="keyboard-row">
                 <kbd class="keyboard-key">A</kbd>
                 <kbd class="keyboard-key">Z</kbd>
@@ -36,9 +37,9 @@
                 <kbd class="keyboard-key">I</kbd>
                 <kbd class="keyboard-key">O</kbd>
                 <kbd class="keyboard-key">P</kbd>
-            </div>
+            </div> <!-- Fin de la div keybord-row -->
             <div class="keyboard-row">
-                <kbd class="keyboard-key large-key caps-lock"><i class="fas fa-lock"></i></kbd> <!-- lumière rajoutée en css avec pseudo-classe before -->
+                <kbd class="keyboard-key large-key caps-lock"><i class="fas fa-lock"><span class="sr-only">Caps Lock</span></i><!--<div class="caps-lock-light"></div>--></kbd>
                 <kbd class="keyboard-key">Q</kbd>
                 <kbd class="keyboard-key">S</kbd>
                 <kbd class="keyboard-key">D</kbd>
@@ -49,10 +50,10 @@
                 <kbd class="keyboard-key">K</kbd>
                 <kbd class="keyboard-key">L</kbd>
                 <kbd class="keyboard-key">M</kbd>
-                <kbd class="keyboard-key large-key"><i class="fas fa-level-down-alt fa-rotate-90"></i></kbd>
-            </div>
+                <kbd class="keyboard-key large-key"><i class="fas fa-level-down-alt fa-rotate-90"><span class="sr-only">Enter</span></i></kbd>
+            </div> <!-- Fin de la div keybord-row -->
             <div class="keyboard-row">
-                <kbd class="keyboard-key large-key"><i class="fas fa-chevron-up"></i></kbd>
+                <kbd class="keyboard-key large-key"><i class="fas fa-chevron-up"><span class="sr-only">Shift</span></i></kbd>
                 <kbd class="keyboard-key">W</kbd>
                 <kbd class="keyboard-key">X</kbd>
                 <kbd class="keyboard-key">C</kbd>
@@ -68,11 +69,11 @@
                       <span class="slider"></span>
                     </label>
                 </kbd>
-            </div>
+            </div> <!-- Fin de la div keybord-row -->
             <div class="keyboard-row">
-                <kbd class="keyboard-key x-large-key">ESPACE</kbd>
-            </div>
-        </div>
+                <kbd class="keyboard-key x-large-key">Espace</kbd>
+            </div> <!-- Fin de la div keybord-row -->
+        </div> <!-- Fin de la div keybord -->
     </main>
 </body>
 </html>
