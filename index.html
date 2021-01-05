@@ -6,6 +6,8 @@
     <title>Clavier virtuel</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/keyboard.css">
+    <link rel="stylesheet" href="css/keyboard-light.css">
+    <link rel="stylesheet" href="css/keyboard-night.css">
 </head>
 <body>
     <header>
@@ -39,7 +41,13 @@
                 <kbd class="keyboard-key">P</kbd>
             </div> <!-- Fin de la div keybord-row -->
             <div class="keyboard-row">
-                <kbd class="keyboard-key large-key caps-lock"><i class="fas fa-lock"><span class="sr-only">Caps Lock</span></i><!--<div class="caps-lock-light"></div>--></kbd>
+                <kbd class="keyboard-key large-key caps-lock">
+                    <label class="lock">
+                        <input type="checkbox">
+                        <i class="fas fa-lock"><span class="sr-only">Caps Lock</span></i>
+                    </label>
+                    <!--<div class="caps-lock-light"></div>-->
+                </kbd>
                 <kbd class="keyboard-key">Q</kbd>
                 <kbd class="keyboard-key">S</kbd>
                 <kbd class="keyboard-key">D</kbd>
@@ -63,7 +71,7 @@
                 <kbd class="keyboard-key">,</kbd>
                 <kbd class="keyboard-key">.</kbd>
                 <kbd class="keyboard-key">?</kbd>
-                <kbd class="keyboard-key large-key">
+                <kbd class="keyboard-key large-key switch-mode">
                     <label class="switch">
                       <input type="checkbox">
                       <span class="slider"></span>
@@ -71,7 +79,7 @@
                 </kbd>
             </div> <!-- Fin de la div keybord-row -->
             <div class="keyboard-row">
-                <kbd class="keyboard-key x-large-key">Espace</kbd>
+                <kbd class="keyboard-key x-large-key"><span class="sr-only">Espace</span></kbd>
             </div> <!-- Fin de la div keybord-row -->
         </div> <!-- Fin de la div keybord -->
     </main>
