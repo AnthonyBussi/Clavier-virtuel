@@ -3,6 +3,7 @@
 body.nightMode {
     background-color: black;
     color: red;
+    transition: all 0.4s linaer
 }
 body.nightMode .screenContainer .screen{
     background-color: rgb(219, 219, 219);
