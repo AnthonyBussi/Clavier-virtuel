@@ -1,0 +1,44 @@
+/**************** MISE EN PAGE GENERALE ****************/
+
+body.nightMode {
+    background-color: black;
+    color: red;
+}
+body.nightMode .screenContainer .screen{
+    background-color: rgb(219, 219, 219);
+    box-shadow: 0px 0px 80px -15px red;
+}
+body.nightMode .keyboard{
+    background-color: black;
+    border: 3px solid rgb(17, 17, 17);
+}
+body.nightMode .keyboard-key{
+    background-color: black;
+    box-shadow: 0px 0px 7px red;
+}
+body.nightMode .keyboard-key:hover{
+    box-shadow: 0px 0px 35px 8px red;
+}
+
+/**************** BOUTON CAPS LOCK ****************/
+
+body.nightMode .caps-lock i::after{
+    background-color: rgba(255, 0, 0, 0.3);
+}
+body.nightMode .caps-lock input:checked + i::after{
+    background-color: white;
+    box-shadow: 0px 0px 12px white;;
+}
+
+
+/**************** BOUTON POUR LE THEME SOMBRE ****************/
+
+body.nightMode .switch-mode .slider{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+body.nightMode .switch-mode .slider::before{
+    background-color: black;
+}
+body.nightMode .switch-mode input:checked + .slider{
+    background-color: rgba(255, 0, 0, 0.8);
+}
