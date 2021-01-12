@@ -6,14 +6,19 @@
     <title>Clavier virtuel</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/keyboard.css">
-    <link rel="stylesheet" href="css/keyboard-light.css">
+    <link rel="stylesheet" href="css/keyboard-light1.css" id="themeSheet">
+    <link rel="stylesheet" href="css/keyboard-night1.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Clavier virtuel</h1>
     </header>
     <main>
-        <div class="keyboard">
+        <div class="screenContainer">
+            <textarea name="screen" class="screen" id="screen" cols="30" rows="20"></textarea>
+        </div>
+        <div class="keyboard" id="keyboard">
             <div class="keyboard-row">                
                 <kbd class="keyboard-key">1</kbd>
                 <kbd class="keyboard-key">2</kbd>
@@ -28,51 +33,51 @@
                 <kbd class="keyboard-key large-key"><i class="fas fa-backspace"><span class="sr-only">Backspace</span></i></kbd>
             </div> <!-- Fin de la div keybord-row -->
             <div class="keyboard-row">
-                <kbd class="keyboard-key">A</kbd>
-                <kbd class="keyboard-key">Z</kbd>
-                <kbd class="keyboard-key">E</kbd>
-                <kbd class="keyboard-key">R</kbd>
-                <kbd class="keyboard-key">T</kbd>
-                <kbd class="keyboard-key">Y</kbd>
-                <kbd class="keyboard-key">U</kbd>
-                <kbd class="keyboard-key">I</kbd>
-                <kbd class="keyboard-key">O</kbd>
-                <kbd class="keyboard-key">P</kbd>
+                <kbd class="keyboard-key">a</kbd>
+                <kbd class="keyboard-key">z</kbd>
+                <kbd class="keyboard-key">e</kbd>
+                <kbd class="keyboard-key">r</kbd>
+                <kbd class="keyboard-key">t</kbd>
+                <kbd class="keyboard-key">y</kbd>
+                <kbd class="keyboard-key">u</kbd>
+                <kbd class="keyboard-key">i</kbd>
+                <kbd class="keyboard-key">o</kbd>
+                <kbd class="keyboard-key">p</kbd>
             </div> <!-- Fin de la div keybord-row -->
             <div class="keyboard-row">
                 <kbd class="keyboard-key large-key caps-lock">
                     <label class="lock">
-                        <input type="checkbox" name="capsLockActive">
+                        <input type="checkbox" id="btnCapsLock" name="capsLockActive">
                         <i class="fas fa-lock"><span class="sr-only">Caps Lock</span></i>
                     </label>
                     <!--<div class="caps-lock-light"></div>-->
                 </kbd>
-                <kbd class="keyboard-key">Q</kbd>
-                <kbd class="keyboard-key">S</kbd>
-                <kbd class="keyboard-key">D</kbd>
-                <kbd class="keyboard-key">F</kbd>
-                <kbd class="keyboard-key">G</kbd>
-                <kbd class="keyboard-key">H</kbd>
-                <kbd class="keyboard-key">J</kbd>
-                <kbd class="keyboard-key">K</kbd>
-                <kbd class="keyboard-key">L</kbd>
-                <kbd class="keyboard-key">M</kbd>
+                <kbd class="keyboard-key">q</kbd>
+                <kbd class="keyboard-key">s</kbd>
+                <kbd class="keyboard-key">d</kbd>
+                <kbd class="keyboard-key">f</kbd>
+                <kbd class="keyboard-key">g</kbd>
+                <kbd class="keyboard-key">h</kbd>
+                <kbd class="keyboard-key">j</kbd>
+                <kbd class="keyboard-key">k</kbd>
+                <kbd class="keyboard-key">l</kbd>
+                <kbd class="keyboard-key">m</kbd>
                 <kbd class="keyboard-key large-key"><i class="fas fa-level-down-alt fa-rotate-90"><span class="sr-only">Enter</span></i></kbd>
             </div> <!-- Fin de la div keybord-row -->
             <div class="keyboard-row">
                 <kbd class="keyboard-key large-key"><i class="fas fa-chevron-up"><span class="sr-only">Shift</span></i></kbd>
-                <kbd class="keyboard-key">W</kbd>
-                <kbd class="keyboard-key">X</kbd>
-                <kbd class="keyboard-key">C</kbd>
-                <kbd class="keyboard-key">V</kbd>
-                <kbd class="keyboard-key">B</kbd>
-                <kbd class="keyboard-key">N</kbd>
+                <kbd class="keyboard-key">w</kbd>
+                <kbd class="keyboard-key">x</kbd>
+                <kbd class="keyboard-key">c</kbd>
+                <kbd class="keyboard-key">v</kbd>
+                <kbd class="keyboard-key">b</kbd>
+                <kbd class="keyboard-key">n</kbd>
                 <kbd class="keyboard-key">,</kbd>
                 <kbd class="keyboard-key">.</kbd>
                 <kbd class="keyboard-key">?</kbd>
                 <kbd class="keyboard-key large-key switch-mode">
                     <label class="switch">
-                      <input type="checkbox" name="nightModeActive">
+                      <input type="checkbox" id="btnNightMode" name="nightModeActive">
                       <span class="slider"></span>
                     </label>
                 </kbd>
@@ -82,5 +87,8 @@
             </div> <!-- Fin de la div keybord-row -->
         </div> <!-- Fin de la div keybord -->
     </main>
+    <footer>
+        <small>Projet réalisé par Anthony Bussi - Ecole Multimédia - 2021</small>
+    </footer>
 </body>
 </html>
