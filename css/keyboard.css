@@ -125,9 +125,10 @@ header{
     transform: translateX(19px);
 }
 
-/**************** BOUTON POUR LE THEME SOMBRE ****************/
+/**************** FOOTER ****************/
 
 footer{
     text-align: center;
     padding-top: 5em;
+    letter-spacing: 0.1em;
 }
