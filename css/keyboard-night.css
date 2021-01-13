@@ -42,3 +42,9 @@ body.nightMode .switch-mode .slider::before{
 body.nightMode .switch-mode input:checked + .slider{
     background-color: rgba(255, 0, 0, 0.8);
 }
+
+/**************** FOOTER ****************/
+
+body.nightMode footer{
+    color: rgba(255, 0, 0, 0.6);
+}
