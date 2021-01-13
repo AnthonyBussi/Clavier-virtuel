@@ -5,7 +5,7 @@ body.nightMode {
     color: red;
 }
 body.nightMode .screenContainer .screen{
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(180, 180, 180);
     box-shadow: 0px 0px 80px -15px red;
 }
 body.nightMode .keyboard{
